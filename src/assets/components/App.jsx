@@ -1,19 +1,21 @@
 import { useState } from 'react'
-import reactLogo from '../react.svg'
-import viteLogo from '/vite.svg'
+import viteLogo from '../drew.png'
 import './App.css'
+import {Footer} from './Footer'
+import {Intro} from './Intro'
 
 export const App = () => {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <Intro/>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src={viteLogo} className="logo react" alt="React logo" />
         </a>
       </div>
       <h1>Vite + React</h1>
@@ -28,6 +30,7 @@ export const App = () => {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Footer/>
     </>
   )
 }
